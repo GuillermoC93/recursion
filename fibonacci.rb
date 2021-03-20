@@ -13,3 +13,14 @@ def fibs(n)
   end
   p fib_nums
 end
+
+# recursion
+def fibs_rec(n)
+  if n == 0
+    return 0
+  elsif n == 1
+    return 1
+  else
+    fibs_rec(n - 1) + fibs_rec(n - 2)
+  end
+end
